@@ -1,0 +1,28 @@
+package cn.ssm.dao;
+
+import cn.ssm.entity.Appointment;
+import org.apache.ibatis.annotations.Param;
+
+public class AppointmentDao {
+    /**
+     * 插入预约图书记录
+     *
+     * @param bookId
+     * @param studentId
+     * @return 插入的行数
+     */
+    int insertAppointment(@Param("bookId") long bookId, @Param("studentId") long studentId){
+        return 0;
+    }
+
+    /**
+     * 通过主键查询预约图书记录，并且携带图书实体
+     *
+     * @param bookId
+     * @param studentId
+     * @return
+     */
+    Appointment queryByKeyWithBook(@Param("bookId") long bookId, @Param("studentId") long studentId){
+        return null;
+    }
+}
